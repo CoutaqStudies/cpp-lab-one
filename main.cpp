@@ -43,7 +43,6 @@ double processArray(double array[], const int n, int a1, int d) {
             printf("%g ", smallerArray[j]);
             printf("%s", "test");
             ++j;
-
         }
     }
 }
