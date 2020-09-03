@@ -40,10 +40,9 @@ double processArray(double array[], const int n, int a1, int d) {
         int num = (fmod(array[i],10)+array[i]/10);
         if(num!=10){
             smallerArray[j] = array[i];
-            printf("%g ", smallerArray[j]);
-            printf("%s", "test");
+            printf("%i ", smallerArray[j]);
             ++j;
         }
     }
+    printf("\n%s\n", "end");
 }
-
