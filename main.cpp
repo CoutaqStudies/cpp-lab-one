@@ -4,13 +4,19 @@
 double processArray(double array[15], const int n, int a1, int d);
 
 double taskOne();
+double taskTwo();
 
 using namespace std;
 
 
 
+
+
 int main() {
     taskOne();
+//    taskTwo();
+//    char* test =  strncat("hello " , "world", 20);
+//    printf("%s",test);
     return 0;
 }
 
@@ -35,21 +41,21 @@ double taskOne() {
 }
 double processArray(double array[], int n, int a1, int d) {
     int cnt = 0;
+    --n;
     int smallerArrayLength = 0;
     printf("first array:\n");
     for(int i = 0; i<=n; ++i){
         array[i] = a1+d*i;
         printf("%g ", array[i]);
-        if(array[i]>9)
+        if(array[i]>9 && array[i]<100)
             ++cnt;
         int num = (fmod(array[i],10)+array[i]/10);
         if(num!=10)
-            smallerArrayLength++;
+            ++smallerArrayLength;
     }
-    printf("\ntwo digit nums: %i\n", cnt);
+    printf("\ncnt: %i\n", cnt);
     printf("second array:\n");
-    static const int array_size = smallerArrayLength;
-    int smallerArray[array_size ];
+    int smallerArray[smallerArrayLength];
     for(int i = 0, j = 0; i<=n; ++i){
         int num = (fmod(array[i],10)+array[i]/10);
         if(num!=10){
@@ -62,4 +68,50 @@ double processArray(double array[], int n, int a1, int d) {
 }
 #pragma endregion
 #pragma region Task Two
+//Преобразование: 2D → 1D. Двумерный массив 4х4 вещественных чисел необходимо
+//        выложить в один ряд по элементам слева направо и снизу вверх.
+//Инициализация: заполнить массив числами x[i][j] = √(i + j + 1).
+//Вывод на экран: каждый элемент одномерного массива вывести с точностью четыре
+//знака после запятой; каждый элемент двумерного массива – с точностью два знака.
+const int arr_size = 4;
+double arrayOfDouble[arr_size][arr_size];
+double taskTwo(){
+    printf("[");
+    for (int i = 0; i < arr_size; i++) {
+        for (int j = 0; j < arr_size; j++) {
+            arrayOfDouble[i][j] = sqrt(i+j+1);
+            printf(" %.3g", arrayOfDouble[i][j]);
+        }
+        if(i != arr_size-1)
+         printf("\n");
+    }
+    printf(" ]");
+    printf("\n=>");
+    printf("\n[");
+    for (int i = arr_size-1; i >= 0; i--) {
+        for (int j = 0; j < arr_size; j++) {
+            printf(" %.5g", arrayOfDouble[i][j]);
+        }
+    }
+    printf("]");
+    return 0;
+}
+
+
+#pragma endregion
+#pragma region Task Three
+char* strncat(char* dest, const char* src, size_t maxlen){
+    int stringLength = min(strlen(src), maxlen);
+    int destLength = strlen(dest);
+    int totalLength = destLength+stringLength;
+    char newCharArray[totalLength];
+    for(int i = 0; i<totalLength;i++) {
+        if (i < destLength) {
+            newCharArray[i] = dest[i];
+        } else {
+            newCharArray[i] = src[i - destLength];
+        }
+    }
+    return newCharArray;
+}
 #pragma endregion
