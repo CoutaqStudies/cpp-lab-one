@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Michael/CLionProjects/lab-one-cpp/main.cpp
+/Users/coutaq/CLionProjects/LabOneCpp/main.cpp
 iostream
 -
-math.h
+cmath
 -
 

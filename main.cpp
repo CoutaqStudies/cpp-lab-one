@@ -1,7 +1,8 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
+#include "vector"
 
-double processArray(double pDouble[15], const int n, int i, int i1);
+double processArray(double array[15], const int n, int a1, int d);
 
 double taskOne();
 
@@ -33,7 +34,7 @@ double taskOne() {
     double result = processArray(a, n, a1, d);
     return result;
 }
-double processArray(double array[], const int n, int a1, int d) {
+double processArray(double array[], int n, int a1, int d) {
     int cnt = 0;
     int smallerArrayLength = 0;
     printf("first array:\n");

@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LabOneCpp.dir/main.cpp.obj"
-  "LabOneCpp.exe"
-  "LabOneCpp.exe.manifest"
-  "LabOneCpp.lib"
+  "CMakeFiles/LabOneCpp.dir/main.cpp.o"
+  "LabOneCpp"
   "LabOneCpp.pdb"
 )
 
