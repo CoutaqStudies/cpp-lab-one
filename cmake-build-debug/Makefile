@@ -170,6 +170,60 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+taskOne.o: taskOne.cpp.o
+
+.PHONY : taskOne.o
+
+# target to build an object file
+taskOne.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/taskOne.cpp.o
+.PHONY : taskOne.cpp.o
+
+taskOne.i: taskOne.cpp.i
+
+.PHONY : taskOne.i
+
+# target to preprocess a source file
+taskOne.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/taskOne.cpp.i
+.PHONY : taskOne.cpp.i
+
+taskOne.s: taskOne.cpp.s
+
+.PHONY : taskOne.s
+
+# target to generate assembly for a file
+taskOne.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/taskOne.cpp.s
+.PHONY : taskOne.cpp.s
+
+taskTwo.o: taskTwo.cpp.o
+
+.PHONY : taskTwo.o
+
+# target to build an object file
+taskTwo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o
+.PHONY : taskTwo.cpp.o
+
+taskTwo.i: taskTwo.cpp.i
+
+.PHONY : taskTwo.i
+
+# target to preprocess a source file
+taskTwo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/taskTwo.cpp.i
+.PHONY : taskTwo.cpp.i
+
+taskTwo.s: taskTwo.cpp.s
+
+.PHONY : taskTwo.s
+
+# target to generate assembly for a file
+taskTwo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/taskTwo.cpp.s
+.PHONY : taskTwo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -182,6 +236,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... taskOne.o"
+	@echo "... taskOne.i"
+	@echo "... taskOne.s"
+	@echo "... taskTwo.o"
+	@echo "... taskTwo.i"
+	@echo "... taskTwo.s"
 .PHONY : help
 
 

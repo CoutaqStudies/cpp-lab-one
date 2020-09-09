@@ -77,9 +77,35 @@ include CMakeFiles/LabOneCpp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LabOneCpp.dir/flags.make
 
+CMakeFiles/LabOneCpp.dir/taskOne.cpp.o: CMakeFiles/LabOneCpp.dir/flags.make
+CMakeFiles/LabOneCpp.dir/taskOne.cpp.o: ../taskOne.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LabOneCpp.dir/taskOne.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LabOneCpp.dir/taskOne.cpp.o -c /Users/coutaq/CLionProjects/LabOneCpp/taskOne.cpp
+
+CMakeFiles/LabOneCpp.dir/taskOne.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabOneCpp.dir/taskOne.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/coutaq/CLionProjects/LabOneCpp/taskOne.cpp > CMakeFiles/LabOneCpp.dir/taskOne.cpp.i
+
+CMakeFiles/LabOneCpp.dir/taskOne.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabOneCpp.dir/taskOne.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/coutaq/CLionProjects/LabOneCpp/taskOne.cpp -o CMakeFiles/LabOneCpp.dir/taskOne.cpp.s
+
+CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o: CMakeFiles/LabOneCpp.dir/flags.make
+CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o: ../taskTwo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o -c /Users/coutaq/CLionProjects/LabOneCpp/taskTwo.cpp
+
+CMakeFiles/LabOneCpp.dir/taskTwo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LabOneCpp.dir/taskTwo.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/coutaq/CLionProjects/LabOneCpp/taskTwo.cpp > CMakeFiles/LabOneCpp.dir/taskTwo.cpp.i
+
+CMakeFiles/LabOneCpp.dir/taskTwo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LabOneCpp.dir/taskTwo.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/coutaq/CLionProjects/LabOneCpp/taskTwo.cpp -o CMakeFiles/LabOneCpp.dir/taskTwo.cpp.s
+
 CMakeFiles/LabOneCpp.dir/main.cpp.o: CMakeFiles/LabOneCpp.dir/flags.make
 CMakeFiles/LabOneCpp.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/LabOneCpp.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/LabOneCpp.dir/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LabOneCpp.dir/main.cpp.o -c /Users/coutaq/CLionProjects/LabOneCpp/main.cpp
 
 CMakeFiles/LabOneCpp.dir/main.cpp.i: cmake_force
@@ -92,15 +118,19 @@ CMakeFiles/LabOneCpp.dir/main.cpp.s: cmake_force
 
 # Object files for target LabOneCpp
 LabOneCpp_OBJECTS = \
+"CMakeFiles/LabOneCpp.dir/taskOne.cpp.o" \
+"CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o" \
 "CMakeFiles/LabOneCpp.dir/main.cpp.o"
 
 # External object files for target LabOneCpp
 LabOneCpp_EXTERNAL_OBJECTS =
 
+LabOneCpp: CMakeFiles/LabOneCpp.dir/taskOne.cpp.o
+LabOneCpp: CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o
 LabOneCpp: CMakeFiles/LabOneCpp.dir/main.cpp.o
 LabOneCpp: CMakeFiles/LabOneCpp.dir/build.make
 LabOneCpp: CMakeFiles/LabOneCpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LabOneCpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable LabOneCpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LabOneCpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

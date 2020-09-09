@@ -5,14 +5,19 @@ double processArray(double pDouble[15], const int n, int i, int i1);
 
 using namespace std;
 
+
+
+int main() {
+}
+
+#pragma region Task One
 //Объявить массив из n=15 целых чисел, проинициализируйте нулями. Функция
 //processArray() должна заполнить массив членами арифметической прогрессии с
 //начальным элементом a1 и шагом d (ввести с клавиатуры), подсчитать и вернуть cnt –
 //количество всех двузначных элементов массива, а также сформировать выходной
 //массив, который содержит все элементы исходного, кроме тех, сумма цифр которых
 //равна 10. Вывести на экран массивы.
-
-int main() {
+void taskOne(){
     const int n = 15;
     double a[n] = { 0.0 };
     srand(0);
@@ -22,9 +27,7 @@ int main() {
     printf("d: ");
     scanf("%d", &d);
     double result = processArray(a, n, a1, d);
-    return 0;
 }
-
 double processArray(double array[], const int n, int a1, int d) {
     int cnt = 0;
     int smallerArrayLength;
@@ -49,5 +52,8 @@ double processArray(double array[], const int n, int a1, int d) {
             ++j;
         }
     }
-    printf("\n%s\n", "end");
+   printf("\n%s\n", "end");
 }
+#pragma endregion
+#pragma region Task Two
+#pragma endregion

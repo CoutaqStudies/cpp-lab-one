@@ -94,12 +94,12 @@ clean: CMakeFiles/LabOneCpp.dir/clean
 CMakeFiles/LabOneCpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LabOneCpp.dir/build.make CMakeFiles/LabOneCpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LabOneCpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target LabOneCpp"
 .PHONY : CMakeFiles/LabOneCpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LabOneCpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LabOneCpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/LabOneCpp.dir/rule

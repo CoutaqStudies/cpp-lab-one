@@ -5,6 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/coutaq/CLionProjects/LabOneCpp/main.cpp" "/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles/LabOneCpp.dir/main.cpp.o"
+  "/Users/coutaq/CLionProjects/LabOneCpp/taskOne.cpp" "/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles/LabOneCpp.dir/taskOne.cpp.o"
+  "/Users/coutaq/CLionProjects/LabOneCpp/taskTwo.cpp" "/Users/coutaq/CLionProjects/LabOneCpp/cmake-build-debug/CMakeFiles/LabOneCpp.dir/taskTwo.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

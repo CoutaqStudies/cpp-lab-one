@@ -83,6 +83,12 @@
 		<Unit filename="/Users/coutaq/CLionProjects/LabOneCpp/main.cpp">
 			<Option target="LabOneCpp"/>
 		</Unit>
+		<Unit filename="/Users/coutaq/CLionProjects/LabOneCpp/taskOne.cpp">
+			<Option target="LabOneCpp"/>
+		</Unit>
+		<Unit filename="/Users/coutaq/CLionProjects/LabOneCpp/taskTwo.cpp">
+			<Option target="LabOneCpp"/>
+		</Unit>
 		<Unit filename="/Users/coutaq/CLionProjects/LabOneCpp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
