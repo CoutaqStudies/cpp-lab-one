@@ -16,14 +16,19 @@ int main() {
     const int n = 15;
     double a[n] = { 0.0 };
     srand(0);
-    double result = processArray(a, n, 10, 9);
+    int a1, d;
+    printf("a1: ");
+    scanf("%d", &a1);
+    printf("d: ");
+    scanf("%d", &d);
+    double result = processArray(a, n, a1, d);
     return 0;
 }
 
 double processArray(double array[], const int n, int a1, int d) {
     int cnt = 0;
     int smallerArrayLength;
-    printf("%s\n", "first array: ");
+    printf("first array:\n");
     for(int i = 0; i<=n; ++i){
         array[i] = a1+d*i;
         printf("%g ", array[i]);
@@ -34,7 +39,7 @@ double processArray(double array[], const int n, int a1, int d) {
             smallerArrayLength++;
     }
     printf("\ntwo digit nums: %i\n", cnt);
-    printf("%s\n", "second array: ");
+    printf("second array:\n");
     int smallerArray[smallerArrayLength];
     for(int i = 0, j = 0; i<=n; ++i){
         int num = (fmod(array[i],10)+array[i]/10);
