@@ -3,11 +3,15 @@
 
 double processArray(double pDouble[15], const int n, int i, int i1);
 
+double taskOne();
+
 using namespace std;
 
 
 
 int main() {
+    taskOne();
+    return 0;
 }
 
 #pragma region Task One
@@ -17,7 +21,7 @@ int main() {
 //количество всех двузначных элементов массива, а также сформировать выходной
 //массив, который содержит все элементы исходного, кроме тех, сумма цифр которых
 //равна 10. Вывести на экран массивы.
-void taskOne(){
+double taskOne() {
     const int n = 15;
     double a[n] = { 0.0 };
     srand(0);
@@ -27,10 +31,11 @@ void taskOne(){
     printf("d: ");
     scanf("%d", &d);
     double result = processArray(a, n, a1, d);
+    return result;
 }
 double processArray(double array[], const int n, int a1, int d) {
     int cnt = 0;
-    int smallerArrayLength;
+    int smallerArrayLength = 0;
     printf("first array:\n");
     for(int i = 0; i<=n; ++i){
         array[i] = a1+d*i;
@@ -43,7 +48,8 @@ double processArray(double array[], const int n, int a1, int d) {
     }
     printf("\ntwo digit nums: %i\n", cnt);
     printf("second array:\n");
-    int smallerArray[smallerArrayLength];
+    static const int array_size = smallerArrayLength;
+    int smallerArray[array_size ];
     for(int i = 0, j = 0; i<=n; ++i){
         int num = (fmod(array[i],10)+array[i]/10);
         if(num!=10){
