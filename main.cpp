@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath>
-#include "vector"
 
 double processArray(double array[15], const int n, int a1, int d);
 
