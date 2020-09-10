@@ -2,9 +2,11 @@
 #include <cmath>
 
 double processArray(double array[15], const int n, int a1, int d);
+char* strncat(char* dest, const char* src, size_t maxlen);
 
 double taskOne();
 double taskTwo();
+double taskThree();
 
 using namespace std;
 
@@ -13,10 +15,9 @@ using namespace std;
 
 
 int main() {
-    taskOne();
+//    taskOne();
 //    taskTwo();
-//    char* test =  strncat("hello " , "world", 20);
-//    printf("%s",test);
+//    taskThree();
     return 0;
 }
 
@@ -100,6 +101,15 @@ double taskTwo(){
 
 #pragma endregion
 #pragma region Task Three
+//Функция strncat.
+//Формат char* strncat(char* dest, const char* src, size_t maxlen).
+//Функция приписывает maxlen символов строки src к строке dest.
+double taskThree(){
+    char* test =  strncat("hello " , "world", 4);
+    printf("%s",test);
+    return 0;
+}
+
 char* strncat(char* dest, const char* src, size_t maxlen){
     int stringLength = min(strlen(src), maxlen);
     int destLength = strlen(dest);
