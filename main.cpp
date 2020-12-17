@@ -17,7 +17,7 @@ using namespace std;
 int main() {
 //    taskOne();
 //    taskTwo();
-//    taskThree();
+    taskThree();
     return 0;
 }
 
@@ -114,7 +114,7 @@ char* strncat(char* dest, const char* src, size_t maxlen){
     int stringLength = min(strlen(src), maxlen);
     int destLength = strlen(dest);
     int totalLength = destLength+stringLength;
-    char newCharArray[totalLength];
+    char* newCharArray = new char[totalLength];
     for(int i = 0; i<totalLength;i++) {
         if (i < destLength) {
             newCharArray[i] = dest[i];
